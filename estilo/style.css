@@ -68,12 +68,12 @@ main {
 
 section#introducao h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     padding-top: 15px;
     margin-bottom: 5px;
     border-bottom: 1px solid;
     border-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0.57), rgb(0, 0, 0)) 1;
-    background: linear-gradient(90deg, transparent, #c800ff ,#af4dff, transparent
+    background: linear-gradient(90deg, #c800ff ,#af4dff
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -98,7 +98,7 @@ section#introducao img {
 
 section#personagens h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 15px;
     border-bottom: 1px solid;
     border-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0.23), rgb(0, 0, 0)) 1;
@@ -161,7 +161,7 @@ section#personagens h2 {
 
 section#sistema h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 10px;
     border-bottom: 1px solid;
     border-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0.23), rgb(0, 0, 0)) 1;
@@ -170,7 +170,7 @@ section#sistema h2 {
   -webkit-text-fill-color: transparent;
 }
 
-section#sistema p {
+.abaixo-do-titulo {
     max-width: 80%;
     text-align: center;
     margin: auto;
@@ -188,6 +188,7 @@ section#sistema p {
 .poder {
     width: 150px;
     height: 150px;
+    text-align: center;
 }
 
 .poder img {
@@ -198,7 +199,7 @@ section#sistema p {
 
 section#graus h2 {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 10px;
     border-bottom: 1px solid;
     border-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0.23), rgb(0, 0, 0)) 1;
@@ -208,27 +209,92 @@ section#graus h2 {
   -webkit-text-fill-color: transparent;
 }
 
-section#graus p {
-    max-width: 80%;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-    color: var(--cinza-claro);
-}
-
 .escola-jujutsu {
-    border: 1px solid white;
     width: 100%;
     height: 300px;
     background-image: url('../imagens/escola-jujutsu.png');
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
+    border-top: 1px solid purple;
+    border-image: linear-gradient( to right, transparent, rgb(255, 0, 255), transparent) 1;
+    border-bottom: 3px solid purple;
 }
 
-.escola-jujutsu .graus ul {
-    height: ;
-    border: 2px solid red;
-    margin-left: 30px;
+.graus {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 15px;
+    padding-left: 30px;
 }
 
+p.cyano::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: cyan;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 0px 5px cyan;
+}
+
+p.cyano strong {
+   text-shadow: 0px 0px 2px cyan;
+}
+
+p.cyano {
+    border-bottom: 1px solid black;
+    border-image: linear-gradient(to right, rgb(118, 118, 118), rgb(255, 255, 255), rgb(59, 59, 59), transparent) 1;
+    width: 50%;
+    padding-bottom: 15px;
+    font-size: 0.93em;
+}
+
+p.roxo::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--roxo-jjk);
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 0px 10px var(--roxo-jjk);
+}
+
+p.roxo {
+    border-bottom: 1px solid black;
+    border-image: linear-gradient(to right, rgb(118, 118, 118), rgb(255, 255, 255), rgb(59, 59, 59), transparent) 1;
+    width: 50%;
+    padding-bottom: 15px;
+    font-size: 0.96em;
+}
+
+p.roxo strong {
+   text-shadow: 0px 0px 5px var(--roxo-jjk);
+}
+
+p.vermelho::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 64, 0);
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 0px 10px red;
+}
+
+p.vermelho strong {
+   text-shadow: 0px 0px 5px red;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+footer p {
+    text-align: center;
+    color: var(--cinza-claro);
+    font-size: 0.85em;
+    padding: 2px;
+}
