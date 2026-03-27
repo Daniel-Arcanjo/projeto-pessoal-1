@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --preto-profundo: #0b0b0f;
+  --cinza-escuro: #14141c;
+  --cinza-medio: #1f1f2b;
+  --azul-jjk: #00eaff;
+  --azul-energia: #3a86ff;
+  --roxo-jjk: #7b2cbf;
+  --roxo-escuro: #3c096c;
+  --branco: #ffffff;
+  --cinza-claro: #cfcfe6;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--preto-profundo);
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(to right, #0b0b0f9d, #3c096c8f, #00656e7e, transparent);
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.581), rgba(255, 255, 255, 0.532), rgb(128, 0, 128), transparent) 1;    
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px;
+     background: linear-gradient(
+    90deg,
+    transparent,
+    #00eaff,
+    #a034ff,
+    transparent
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header ul a {
+    padding: 15px;
+    text-decoration: none;
+    color: var(--cinza-claro);
+}
+
+main {
+    max-width: 800px;
+    background-color: var(--cinza-escuro);
+    margin: auto;
+}
+
+section#introducao h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0.57), rgb(0, 0, 0)) 1;
+    background: linear-gradient(90deg, transparent, #c800ff ,#af4dff, transparent
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section#introducao p {
+max-width: 80%;
+text-align: center;
+margin: auto;
+margin-bottom: 10px;
+color: var(--cinza-claro);
+font-size: 0.85em;
+letter-spacing: 0.09em;
+}
+
+section#introducao img {
+    width: 100%;
+    border-top: 2px solid #3a85ff80;
+    border-bottom: 2px solid #3a85ff80;
+    border-image:  linear-gradient(90deg, transparent, #00eaff,blue, #7b2cbf, transparent) 1;
+}
+
+section#personagens h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0.23), rgb(0, 0, 0)) 1;
+    background: linear-gradient(90deg, transparent, #6562ff ,#6ab2ff, transparent
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.card {
+    border: 2px solid rgba(202, 201, 255, 0.559);
+}
+
+.card .nome {
+    text-align: center;
+    margin-top: 5px;
+    padding: 1px;
+    color: rgb(183, 0, 255);
+    border-bottom: 1px solid red;
+    border-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0.337), rgb(0, 0, 0)) 1;
+}
+
+.card .grau {
+    text-align: center;
+    padding: 1px;
+    margin-top: 5px;
+}
+
+.personagem {
+    width: 160px;
+    height: 140px;
+}
+
+.personagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.barra {
+    background-image: linear-gradient(to right, rgba(161, 53, 255, 0.389), rgba(75, 8, 142, 0.455));
+    width: 89%;
+    height: 14px;
+   margin-left: 10px;
+   margin-bottom: 13px;
+   margin-top: 5px;
+}
+
+.progresso {
+    width: 100%;
+    height: 100%;
+}
